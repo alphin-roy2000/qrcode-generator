@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CODE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+          * {
+  text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+html {
+  padding: 0;
+  font-size: 16px;
+  /* If you set different base font, you might need more tweak */
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: rgb(242, 245, 247);
+  color: #4d5068;
+  font-family: "Dosis", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.content-body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  flex-direction: column;
+ background-color: #393535;
+  /* background-position-x: center;
+  background-position-y: center; */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media screen and (max-width: 640px) {
+  .content-body {
+    background-position-y: top;
+
+    /* margin-bottom: 5em; */
+    /* tweak for footer fixed -- you don't need this */
+  }
+  .imagesection{
+    height: 400px;
+}
+}
+
+.form-wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+hr.copyrightline {
+  /* height: 4px; */
+  border: 0.5px solid rgba(49, 46, 46, 0.37);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 750px) {
+  /* .form-wrapper {
+    margin-top: 200px;
+  } */
+  .form-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-wrapper {
+    width: 90%;
+  }
+
+}
+
+.bg-white {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #e5e7ec;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.bg-grey {
+  width: 100%;
+  background-color: #f8fafc;
+  border: 2px solid #e5e7ec;
+  border-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.text-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.field-group {
+  border: 0;
+  padding: 0.35em 0 0.625em 0;
+  text-align: left;
+  position: relative;
+}
+
+.label {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.input {
+  padding: 0.5em 0 0.5em 1em;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e5e7ec;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 1rem;
+  
+  box-sizing: border-box;
+}
+
+.btn-submit {
+    margin:auto ;
+  background-color: #e0c80e;
+  color: #fff;
+  padding: 0.7em;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn-submit:hover {
+  background-color: rgb(145, 130, 17);
+}
+
+.link-forgot {
+  position: absolute;
+  right: 10px;
+  margin-top: 1em;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #6371c5;
+  z-index: 2;
+}
+
+.link-register {
+  background-color: #fff;
+  display: flex;
+  padding: 0.7em;
+  justify-content: center;
+  text-decoration: none;
+  color: #4d5068;
+  border: 1px solid #e5e7ec;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.link-about > a {
+  color: #4d5068;
+  text-decoration: underline;
+}
+#hide1 {
+  display: none;
+}
+.eye {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+.Title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+.res {
+  color: rgb(213, 192, 6);
+}
+.inn {
+  color: grey;
+}
+.imagesection{
+    margin-bottom: 30px;
+}
+.Title1 {
+  font-family: "Londrina Shadow", cursive;
+  font-size: .75em;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
+        /* body{
+            background-color: #393535;
+        }
+       .wrap{
+        color: white;
+  background: white;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+       }
+       .wrap img{
+           margin-bottom: 50px;
+       }
+ 
+       .button {
+           width: 300px;
+
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+}
+.imgsection{
+    height: 500px;
+    width: 500px;
+
+}
+ */
+/* } */
+@media screen and (max-width: 640px) {
+ 
+    .imgsection{
+      margin-bottom: 30px;
+        height: 400px;
+   
+    }
+
+}
+@media screen and (max-width: 500px) {
+ 
+ .imgsection{
+   
+     height: 250px;
+
+ }
+
+}
+@media screen and (max-width: 300px) {
+ 
+ .imgsection{
+   
+     height: 150px;
+
+ }
+
+}
+@media screen and (max-width: 200px) {
+ 
+ .imgsection{
+   
+     height: 50px;
+
+ }
+ .btn-submit {
+font-size: 10px;
+  width: 50px;
+  height: 30px;
+
+}
+
+}
+    </style>
+</head>
+<body>
+    <div class="content-body">
+        <div class="form-wrapper">
+          
+          <div class="bg-white" >
+            <img class="t1 imgsection"   src=<%=src%> alt="">
+          
+           
+    
+            <div class="field-group">
+              <!-- <input class="btn-submit" type="submit" value="Generate QR" download="TakshakQR.png" title="Download QR image"  href=<%=src%> /> -->
+              <a class="t1 btn-submit" download="TakshakQR.png" title="Download QR image"  href=<%=src%>  >
+                Download QR
+                 
+                </a>
+            </div>
+        </div>
+    
+          <div class="bg-grey">
+           
+          </div>
+        </div>
+      </div>
+    
+
+      </div>
+    <!-- <div class="wrap">
+        <img class="t1 imgsection"   src=<%=src%> alt="">
+        <div><a class="t1 button" download="TakshakQR.png" title="Download QR image" width = "1000" height = "1000" href=<%=src%>  >
+            Download QR
+             
+            </a></div>
+    </div> -->
+</body>
+</html>
